@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summit Cricket Academy — Player Profiles</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    header {
+      background: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+      animation: fadeInDown 1s ease;
+    }
+    header img {
+      max-width: 100px;
+      margin-bottom: 15px;
+      animation: bounce 2s infinite;
+    }
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+      font-weight: 700;
+      color: #111;
+    }
+    header p {
+      font-size: 16px;
+      margin-top: 5px;
+      color: #555;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 0;
+      background: #ffffff;
+      border-bottom: 1px solid #eee;
+      animation: fadeIn 1.5s ease;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      transition: color 0.2s, transform 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+    nav a:hover {
+      color: #ff4d4d;
+      transform: scale(1.1);
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeInUp 1s ease;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 40px;
+      color: #111;
+      text-align: center;
+    }
+    .players {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+    }
+    .player-card {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+      background: #fafafa;
+    }
+    .player-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    .player-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #007bff;
+    }
+    .player-card h3 {
+      margin: 10px 0 5px 0;
+      font-size: 18px;
+      color: #111;
+    }
+    .player-card p {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0;
+    }
+    footer {
+      background: #ffffff;
+      color: #555;
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #eee;
+      margin-top: 40px;
+      font-size: 14px;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeInDown { 0% { opacity: 0; transform: translateY(-30px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeInUp { 0% { opacity: 0; transform: translateY(30px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-15px); } 60% { transform: translateY(-7px); } }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="academy-logo.png" alt="Summit Cricket Academy Logo">
+  <h1>🏏 Summit Cricket Academy</h1>
+  <p>Meet Our Elite Academy Players</p>
+</header>
+
+<nav>
+  <a href="landing-page.html"><i class="fa-solid fa-house"></i> Home</a>
+  <a href="register.html"><i class="fa-solid fa-pen-to-square"></i> Register</a>
+  <a href="trials.html"><i class="fa-solid fa-calendar-check"></i> Trials</a>
+  <a href="scholarships.html"><i class="fa-solid fa-graduation-cap"></i> Scholarships</a>
+  <a href="academy-profiles.html"><i class="fa-solid fa-users"></i> Players</a>
+  <a href="management-profiles.html"><i class="fa-solid fa-user-tie"></i> Management</a>
+  <a href="tours&fixtures.html"><i class="fa-solid fa-calendar-day"></i> Tours & Fixtures</a>
+  <a href="our-partners.html"><i class="fa-solid fa-handshake"></i> Our Partners</a>
+</nav>
+
+<section>
+  <h2>🌟 Academy Player Profiles</h2>
+  <div class="players">
+    <div class="player-card">
+      <img src="player1.jpg" alt="Player 1">
+      <h3>John Moyo</h3>
+      <p>Age: 19 | Role: Batter 🏏</p>
+      <p>Average: 45.2 | Strike Rate: 92</p>
+    </div>
+    <div class="player-card">
+      <img src="player2.jpg" alt="Player 2">
+      <h3>Tinashe Dube</h3>
+      <p>Age: 21 | Role: Bowler 🎳</p>
+      <p>Economy: 5.2 | Wickets: 32</p>
+    </div>
+    <div class="player-card">
+      <img src="player3.jpg" alt="Player 3">
+      <h3>Chipo Ncube</h3>
+      <p>Age: 18 | Role: All-Rounder ⚡</p>
+      <p>Bat Avg: 32 | Wkts: 18 | SR: 88</p>
+    </div>
+    <div class="player-card">
+      <img src="player4.jpg" alt="Player 4">
+      <h3>Brian Sithole</h3>
+      <p>Age: 20 | Role: Wicket-Keeper 🧤</p>
+      <p>Dismissals: 15 | Bat Avg: 29</p>
+    </div>
+    <div class="player-card">
+      <img src="player5.jpg" alt="Player 5">
+      <h3>Leroy Chikondo</h3>
+      <p>Age: 22 | Role: Batter 🏏</p>
+      <p>Average: 41.5 | Strike Rate: 95</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Summit Cricket Academy. All Rights Reserved.
+</footer>
+
+</body>
+</html>

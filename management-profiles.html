@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summit Cricket Academy — Management Profiles</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    header {
+      background: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+      animation: fadeInDown 1s ease;
+    }
+    header img {
+      max-width: 100px;
+      margin-bottom: 15px;
+      animation: bounce 2s infinite;
+    }
+    header h1 {
+      font-size: 32px;
+      margin: 0;
+      font-weight: 700;
+      color: #111;
+      animation: fadeIn 1.5s ease;
+    }
+    header p {
+      font-size: 16px;
+      margin-top: 5px;
+      color: #555;
+      animation: fadeIn 2s ease;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 15px 0;
+      background: #ffffff;
+      border-bottom: 1px solid #eee;
+      animation: fadeIn 2s ease;
+    }
+    nav a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      transition: color 0.2s, transform 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+    nav a:hover {
+      color: #ff4d4d;
+      transform: scale(1.1);
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeInUp 1s ease;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 40px;
+      color: #111;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+    .profiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+    }
+    .profile-card {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+      background: #fafafa;
+      animation: popIn 0.8s ease;
+    }
+    .profile-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    .profile-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #007bff;
+    }
+    .profile-card h3 {
+      margin: 10px 0 5px 0;
+      font-size: 20px;
+      color: #111;
+    }
+    .profile-card p {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0;
+    }
+    footer {
+      background: #ffffff;
+      color: #555;
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #eee;
+      margin-top: 40px;
+      font-size: 14px;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeInDown { 0% { opacity: 0; transform: translateY(-30px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeInUp { 0% { opacity: 0; transform: translateY(30px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes bounce { 0%,20%,50%,80%,100%{ transform: translateY(0); } 40%{ transform: translateY(-15px); } 60%{ transform: translateY(-7px); } }
+    @keyframes popIn { 0% { opacity:0; transform: scale(0.8);} 100% { opacity:1; transform: scale(1);} }
+
+    @media (max-width: 768px) {
+      .profiles { gap: 20px; }
+      nav { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="academy-logo.png" alt="Summit Cricket Academy Logo">
+  <h1>🏏 Summit Cricket Academy</h1>
+  <p>Meet Our Leadership & Management Team</p>
+</header>
+
+<nav>
+  <a href="landing-page.html"><i class="fa-solid fa-house"></i> Home</a>
+  <a href="register.html"><i class="fa-solid fa-pen-to-square"></i> Registration</a>
+  <a href="trials.html"><i class="fa-solid fa-calendar-check"></i> Trials</a>
+  <a href="scholarships.html"><i class="fa-solid fa-graduation-cap"></i> Scholarships</a>
+  <a href="tours&fixtures.html"><i class="fa-solid fa-calendar-day"></i> Tours & Fixtures</a>
+  <a href="our-partners.html"><i class="fa-solid fa-handshake"></i> Our Partners</a>
+</nav>
+
+<section>
+  <h2>🌟 Academy Management Profiles</h2>
+  <div class="profiles">
+    <div class="profile-card">
+      <img src="headcoach.jpg" alt="Head Coach">
+      <h3>Mr. Mthokozisi Sapuwa</h3>
+      <p>🏏 Head Coach & Performance Director</p>
+      <p>Leads cricket training programs, manages elite squads, and drives performance metrics.</p>
+    </div>
+    <div class="profile-card">
+      <img src="adminmanager.jpg" alt="Admin Manager">
+      <h3>Ms. Nyaradzo Chikomo</h3>
+      <p>🗂 Administration & Operations Manager</p>
+      <p>Coordinates day-to-day operations, player registrations, and logistics management.</p>
+    </div>
+    <div class="profile-card">
+      <img src="fitnesscoach.jpg" alt="Fitness Coach">
+      <h3>Mr. Tendai Moyo</h3>
+      <p>💪 Fitness & Conditioning Coach</p>
+      <p>Designs training programs, monitors player fitness, and ensures injury prevention protocols.</p>
+    </div>
+    <div class="profile-card">
+      <img src="scholarshipcoordinator.jpg" alt="Scholarship Coordinator">
+      <h3>Ms. Rudo Chigumira</h3>
+      <p>🎓 Scholarships & Community Liaison</p>
+      <p>Manages scholarship programs, community outreach, and academic support for players.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Summit Cricket Academy. All Rights Reserved.
+</footer>
+
+</body>
+</html>

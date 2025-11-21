@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summit Cricket Academy — U23 Trials 2026</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    header {
+      background: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+      animation: fadeInDown 1s ease;
+    }
+    header img {
+      max-width: 100px;
+      margin-bottom: 15px;
+      animation: bounce 2s infinite;
+    }
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+      font-weight: 700;
+      color: #111;
+    }
+    header p {
+      font-size: 16px;
+      margin-top: 5px;
+      color: #555;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 0;
+      background: #ffffff;
+      border-bottom: 1px solid #eee;
+      animation: fadeIn 1.5s ease;
+    }
+    nav a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      transition: color 0.2s, transform 0.3s;
+    }
+    nav a:hover {
+      color: #ff4d4d;
+      transform: scale(1.1);
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInUp 1s ease;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #111;
+    }
+    p, li {
+      font-size: 16px;
+      color: #555;
+    }
+    li::before {
+      content: '\1F3CF';
+      margin-right: 8px;
+    }
+    ul { padding-left: 20px; }
+    footer {
+      background: #ffffff;
+      color: #555;
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #eee;
+      margin-top: 40px;
+      font-size: 14px;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-15px); }
+      60% { transform: translateY(-7px); }
+    }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="academy-logo.png" alt="Summit Cricket Academy Logo">
+  <h1>🏏 Summit Cricket Academy <br> U23 Trials 2026</h1>
+  <p>Honouring: C. Sapuwa Memorial Cup | Bulawayo, Zimbabwe</p>
+</header>
+
+<nav>
+  <a href="landing-page.html"><i class="fa-solid fa-house"></i> Home</a>
+  <a href="register.html"><i class="fa-solid fa-pen-to-square"></i> Register</a>
+  <a href="trials.html"><i class="fa-solid fa-calendar-check"></i> Trials</a>
+  <a href="scholarships.html"><i class="fa-solid fa-graduation-cap"></i> Scholarships</a>
+  <a href="academy-profiles.html"><i class="fa-solid fa-users"></i> Players</a>
+  <a href="management-profiles.html"><i class="fa-solid fa-user-tie"></i> Management</a>
+  <a href="tours&fixtures.html"><i class="fa-solid fa-calendar-day"></i> Tours & Fixtures</a>
+  <a href="our-partners.html"><i class="fa-solid fa-handshake"></i> Our Partners</a>
+</nav>
+
+<section>
+  <h2>Important Dates & Countdown Timers ⏰</h2>
+  <div class="timer-container">
+    <div class="timer">
+      <h3>📅 Registration Opens</h3>
+      <div class="time" id="timerRegistration"></div>
+      <p>27 November 2025</p>
+    </div>
+    <div class="timer">
+      <h3>📢 Team Announcement</h3>
+      <div class="time" id="timerTeams"></div>
+      <p>27 December 2025</p>
+    </div>
+    <div class="timer">
+      <h3>📝 Briefing Session</h3>
+      <div class="time" id="timerBrief"></div>
+      <p>3 January 2026, 09:00</p>
+    </div>
+    <div class="timer">
+      <h3>🏏 Trial Tournament Start</h3>
+      <div class="time" id="timerTournament"></div>
+      <p>10 January 2026</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Summit Cricket Academy. All Rights Reserved.
+</footer>
+
+<script>
+// Countdown target dates
+const registrationDate = new Date("Nov 27, 2025 00:00:00").getTime();
+const teamsDate = new Date("Dec 27, 2025 18:00:00").getTime();
+const briefDate = new Date("Jan 3, 2026 09:00:00").getTime();
+const tournamentDate = new Date("Jan 10, 2026 08:00:00").getTime();
+
+function updateTimers() {
+  const now = new Date().getTime();
+  const dates = [
+    { id: "timerRegistration", target: registrationDate },
+    { id: "timerTeams", target: teamsDate },
+    { id: "timerBrief", target: briefDate },
+    { id: "timerTournament", target: tournamentDate }
+  ];
+
+  dates.forEach(function(d) {
+    let distance = d.target - now;
+    if(distance < 0){
+      document.getElementById(d.id).innerHTML = "📌 Happening Now / Completed";
+      return;
+    }
+    let days = Math.floor(distance / (1000*60*60*24));
+    let hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+    let minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+    let seconds = Math.floor((distance % (1000*60)) / 1000);
+    document.getElementById(d.id).innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  });
+}
+
+updateTimers();
+setInterval(updateTimers, 1000);
+</script>
+
+</body>
+</html>

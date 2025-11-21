@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Partners — Summit Cricket Academy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: #f4f4f9;
+      color: #111;
+      overflow-x: hidden;
+    }
+    header {
+      background: #0056b3;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeInDown 1s ease;
+    }
+    header img {
+      max-width: 120px;
+      margin-bottom: 15px;
+      animation: bounce 2s infinite;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    header p {
+      font-size: 18px;
+      margin-top: 5px;
+      animation: fadeInUp 1s ease;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px 0;
+      background: #ffffff;
+      border-bottom: 2px solid #eee;
+      animation: fadeIn 1.5s ease;
+    }
+    nav a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      transition: color 0.2s, transform 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    nav a:hover {
+      color: #ff4d4d;
+      transform: scale(1.1);
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInUp 1s ease;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #111;
+    }
+    .partner-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+    .partner-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 30px 20px;
+      text-align: center;
+      width: 250px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .partner-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    .partner-card img {
+      max-width: 120px;
+      margin-bottom: 15px;
+      animation: bounce 2s infinite;
+    }
+    .partner-card h3 {
+      margin: 10px 0;
+      color: #0056b3;
+      font-size: 20px;
+    }
+    .partner-card p {
+      color: #555;
+      font-size: 16px;
+    }
+    .partner-card a {
+      color: #ff4d4d;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-block;
+      margin-top: 8px;
+    }
+    .partner-card a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background: #eee;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown { 0% { opacity: 0; transform: translateY(-30px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeInUp { 0% { opacity: 0; transform: translateY(30px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes bounce { 0%,20%,50%,80%,100%{ transform: translateY(0); } 40%{ transform: translateY(-15px); } 60%{ transform: translateY(-7px); } }
+
+    @media (max-width: 768px) {
+      .partner-card { width: 100%; max-width: 300px; }
+      nav { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="academy-logo.png" alt="Summit Cricket Academy Logo">
+  <h1>🏏 Summit Cricket Academy</h1>
+  <p>Honouring: C. Sapuwa Memorial Cup | Bulawayo, Zimbabwe</p>
+</header>
+
+<nav>
+  <a href="landing-page.html"><i class="fa-solid fa-house"></i> Home</a>
+  <a href="register.html"><i class="fa-solid fa-pen-to-square"></i> Register</a>
+  <a href="trials.html"><i class="fa-solid fa-calendar-check"></i> Trials</a>
+  <a href="scholarships.html"><i class="fa-solid fa-graduation-cap"></i> Scholarships</a>
+  <a href="academy-profiles.html"><i class="fa-solid fa-user-group"></i> Academy Players</a>
+  <a href="management-profiles.html"><i class="fa-solid fa-users-gear"></i> Management</a>
+  <a href="tours&fixtures.html"><i class="fa-solid fa-calendar-days"></i> Tours & Fixtures</a>
+  <a href="our-partners.html"><i class="fa-solid fa-handshake"></i> Partners</a>
+</nav>
+
+<section>
+  <h2>Our Principal Sponsor & Partners 🤝</h2>
+  <p>The Summit Cricket Academy proudly acknowledges our principal founder and sponsors:</p>
+  <div class="partner-container">
+    <div class="partner-card">
+      <img src="partner-logos/sns.png" alt="Sentinel Nexus Systems Logo">
+      <h3>Sentinel Nexus Systems</h3>
+      <p>Principal Founder & Sponsor of Summit Cricket Academy. Driving innovation and excellence in sports development, youth engagement, and smart academy infrastructure.</p>
+      <a href="https://sentinelxinvestments.com" target="_blank">Visit Website</a>
+    </div>
+    <div class="partner-card">
+      <img src="partner-logos/os-logo.png" alt="Sentinel-X Cloud OS Logo">
+      <h3>Sentinel-X Cloud OS</h3>
+      <p>Empowering all digital and technological infrastructure of the academy, ensuring smooth operations and innovative smart solutions.</p>
+      <a href="https://sentinel-x.cloud" target="_blank">Visit Website</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Summit Cricket Academy. All Rights Reserved.
+</footer>
+
+</body>
+</html>

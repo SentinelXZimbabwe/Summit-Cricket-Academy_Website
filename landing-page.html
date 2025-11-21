@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summit Cricket Club</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    header {
+      background: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+      animation: fadeInDown 1s ease;
+    }
+    header img {
+      max-width: 100px;
+      margin-bottom: 15px;
+      animation: bounce 2s infinite;
+    }
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+      font-weight: 700;
+      color: #111;
+    }
+    header p {
+      font-size: 16px;
+      margin-top: 5px;
+      color: #555;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 0;
+      background: #ffffff;
+      border-bottom: 1px solid #eee;
+      animation: fadeIn 1.5s ease;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      transition: color 0.2s, transform 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+    nav a:hover {
+      color: #ff4d4d;
+      background: #f0f0f0;
+      transform: scale(1.1);
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInUp 1s ease;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #111;
+    }
+    p, li {
+      font-size: 16px;
+      color: #555;
+    }
+    li::before {
+      content: '\1F3CF';
+      margin-right: 8px;
+    }
+    ul { padding-left: 20px; }
+    footer {
+      background: #ffffff;
+      color: #555;
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #eee;
+      margin-top: 40px;
+      font-size: 14px;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-15px); }
+      60% { transform: translateY(-7px); }
+    }
+
+    @media (max-width: 768px) {
+      nav { gap: 15px; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="academy-logo.png" alt="Summit Cricket Club Logo">
+  <h1>🏏 Summit Cricket Club</h1>
+  <p>Professional & Community Cricket Club – Bulawayo, Zimbabwe</p>
+</header>
+
+<nav>
+  <a href="index.html"><i class="fa-solid fa-house"></i> Index</a>
+  <a href="landing-page.html"><i class="fa-solid fa-house"></i> Home</a>
+  <a href="register.html"><i class="fa-solid fa-pen-to-square"></i> Register</a>
+  <a href="trials.html"><i class="fa-solid fa-calendar-check"></i> Trials</a>
+  <a href="scholarships.html"><i class="fa-solid fa-graduation-cap"></i> Scholarships</a>
+  <a href="academy-profiles.html"><i class="fa-solid fa-users"></i> Players</a>
+  <a href="management-profiles.html"><i class="fa-solid fa-user-tie"></i> Management</a>
+  <a href="tours&fixtures.html"><i class="fa-solid fa-calendar-day"></i> Tours & Fixtures</a>
+  <a href="our-partners.html"><i class="fa-solid fa-handshake"></i> Our Partners</a>
+  <a href="#mission"><i class="fa-solid fa-bullseye"></i> Mission</a>
+  <a href="#vision"><i class="fa-solid fa-rocket"></i> Vision</a>
+  <a href="#objectives"><i class="fa-solid fa-clipboard"></i> Objectives</a>
+  <a href="#membership"><i class="fa-solid fa-users"></i> Membership</a>
+  <a href="#ecosystem"><i class="fa-solid fa-building-columns"></i> Club Ecosystem</a>
+  <a href="#governance"><i class="fa-solid fa-gavel"></i> Governance</a>
+  <a href="#milestones"><i class="fa-solid fa-calendar-days"></i> Milestones</a>
+  <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+</nav>
+
+<section id="mission">
+  <h2>Club Mission 🎯</h2>
+  <p>To provide a <strong>holistic cricket ecosystem</strong> for talented individuals graduating from Summit Cricket Academy and other pathways, enabling progression to professional cricket while maintaining educational and personal development.</p>
+</section>
+
+<section id="vision">
+  <h2>Vision 🚀</h2>
+  <p>To establish a <strong>self-sustaining cricket club ecosystem</strong> in Bulawayo that serves as a hub for talent, education, and professional cricket pathways, becoming a benchmark club nationally and regionally.</p>
+</section>
+
+<section id="objectives">
+  <h2>Objectives 📋</h2>
+  <ul>
+    <li>Capture all graduating talent from Summit Cricket Academy (U16–U23).</li>
+    <li>Provide continued professional development and competitive match exposure.</li>
+    <li>Maintain educational integration for school-going players.</li>
+    <li>Foster community engagement and cricket promotion in Bulawayo.</li>
+    <li>Develop a club ecosystem supporting coaching, administration, sponsorship, and professional pathways.</li>
+  </ul>
+</section>
+
+<section id="membership">
+  <h2>Membership & Player Pathways 👥</h2>
+  <ul>
+    <li><strong>Primary Members:</strong> Graduates from Summit Cricket Academy.</li>
+    <li><strong>Secondary Members:</strong> Local talent identified via trials, community outreach, or school partnerships.</li>
+    <li><strong>Age Groups:</strong> U16, U19, U21, U23, Senior/Professional Squad.</li>
+    <li><strong>Education:</strong> All U19-U23 players must remain in school or under structured education programs.</li>
+    <li><strong>Non-School Talent:</strong> Special pathways available to reintegrate into education or secure scholarships.</li>
+  </ul>
+</section>
+
+<section id="ecosystem">
+  <h2>Club Ecosystem 🏟</h2>
+  <h3>A. Cricket Operations 🏏</h3>
+  <ul>
+    <li>First Team / Senior Squad</li>
+    <li>U23 Development Squad</li>
+    <li>U21 Development Squad</li>
+    <li>U19 & U16 Academy Graduates Squad</li>
+    <li>Community Engagement Teams</li>
+  </ul>
+  <h3>B. Support Functions 💼</h3>
+  <ul>
+    <li>Coaching & Technical Team</li>
+    <li>Fitness & Rehabilitation Team</li>
+    <li>Analytics & Performance Tracking (Sentinel-X Integration)</li>
+    <li>Education & Academic Support Team</li>
+  </ul>
+  <h3>C. Club Facilities 🏢</h3>
+  <ul>
+    <li>Home ground & practice nets</li>
+    <li>Indoor training facility with bowling machines</li>
+    <li>Video analysis and performance lab</li>
+    <li>Fitness & recovery center</li>
+    <li>Clubhouse & administrative offices</li>
+  </ul>
+  <h3>D. Club Activities 🎉</h3>
+  <ul>
+    <li>Local league participation (BMCA sanctioned)</li>
+    <li>Inter-academy and national tournaments</li>
+    <li>International exposure tours</li>
+    <li>Community cricket camps</li>
+  </ul>
+</section>
+
+<section id="governance">
+  <h2>Governance Structure ⚖️</h2>
+  <h3>A. Board of Directors</h3>
+  <ul>
+    <li>Chairperson</li>
+    <li>Vice-Chairperson</li>
+    <li>Secretary</li>
+    <li>Treasurer</li>
+    <li>Director of Cricket Operations</li>
+    <li>Director of Education & Player Welfare</li>
+    <li>Director of Sponsorship & Partnerships</li>
+  </ul>
+  <h3>B. Advisory Committee 👨‍🏫</h3>
+  <ul>
+    <li>Former National Players</li>
+    <li>Sports Scientists & Analysts</li>
+    <li>Education Specialists</li>
+  </ul>
+  <h3>C. Executive Management 👔</h3>
+  <ul>
+    <li>Head Coach / Academy Liaison</li>
+    <li>Club Manager</li>
+    <li>Performance Analyst</li>
+    <li>Medical & Fitness Coordinator</li>
+  </ul>
+</section>
+
+<section id="milestones">
+  <h2>Key Milestones 📅</h2>
+  <ul>
+    <li>2025–2026: Academy operations fully established (U16–U23).</li>
+    <li>2027: Official registration of Summit Cricket Club with BMCA.</li>
+    <li>2027: First club league participation with U19 & U23 squads.</li>
+    <li>2028: Expand senior squad participation in national competitions.</li>
+    <li>2029: Launch international exposure tours and talent scouting programs.</li>
+    <li>2030: Establish satellite clubs in other Zimbabwean cities.</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact & Administration ✉️</h2>
+  <p><strong>Head Office:</strong> Summit Cricket Academy Campus, Bulawayo</p>
+  <p><strong>Email:</strong> info@summitcricketclub.co.zw</p>
+  <p><strong>Phone:</strong> +263 XXXX XXX XXX</p>
+  <p><strong>Website:</strong> www.summitcricketclub.co.zw (planned)</p>
+</section>
+
+<footer>
+  © 2025 Summit Cricket Club. All Rights Reserved.
+</footer>
+
+</body>
+</html>

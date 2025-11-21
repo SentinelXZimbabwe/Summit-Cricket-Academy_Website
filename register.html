@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summit Cricket Academy U23 Trials Registration</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    header {
+      background: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+      animation: fadeInDown 1s ease;
+    }
+    header img {
+      max-width: 100px;
+      margin-bottom: 15px;
+      animation: bounce 2s infinite;
+    }
+    header h1 {
+      font-size: 32px;
+      margin: 0;
+      font-weight: 700;
+      color: #111;
+    }
+    header p {
+      font-size: 16px;
+      margin-top: 5px;
+      color: #555;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px 0;
+      background: #ffffff;
+      border-bottom: 2px solid #eee;
+      animation: fadeIn 1.5s ease;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      transition: color 0.2s, transform 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 12px;
+      border-radius: 8px;
+    }
+    nav a:hover {
+      color: #ff4d4d;
+      background: #f0f0f0;
+      transform: scale(1.1);
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 700px;
+      margin: auto;
+      animation: fadeInUp 1s ease;
+    }
+    h2 { font-size: 28px; margin-bottom: 15px; color: #111; text-align: center; }
+    form { display: flex; flex-direction: column; gap: 15px; }
+    label { font-weight: 600; color: #111; }
+    input, select, button {
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      width: 100%;
+      box-sizing: border-box;
+      transition: border 0.2s;
+    }
+    input:focus, select:focus {
+      border-color: #ff4d4d;
+      outline: none;
+    }
+    button {
+      background: #111;
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      transition: background 0.3s;
+    }
+    button:hover { background: #ff4d4d; }
+    .download-btn {
+      background: #555;
+      margin-top: 10px;
+      display: inline-block;
+      text-align: center;
+      padding: 12px;
+      border-radius: 6px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .download-btn:hover {
+      background: #ff4d4d;
+    }
+    .emergency-contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+    }
+    footer {
+      background: #ffffff;
+      color: #555;
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #eee;
+      margin-top: 40px;
+      font-size: 14px;
+      animation: fadeIn 2s ease;
+    }
+    @keyframes fadeInDown { 0% { opacity: 0; transform: translateY(-30px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeInUp { 0% { opacity: 0; transform: translateY(30px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes bounce { 0%,20%,50%,80%,100%{ transform: translateY(0); } 40%{ transform: translateY(-15px); } 60%{ transform: translateY(-7px); } }
+
+    @media (max-width: 768px) {
+      nav { gap: 10px; justify-content: center; }
+      .emergency-contact { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="academy-logo.png" alt="Summit Cricket Academy Logo">
+  <h1>🏏 Summit Cricket Academy U23 Trials Registration</h1>
+  <p>Fill in your details below to register for the C. Sapuwa Memorial U23 Trials</p>
+</header>
+
+<nav>
+  <a href="landing-page.html"><i class="fa-solid fa-house"></i> Home</a>
+  <a href="register.html"><i class="fa-solid fa-pen-to-square"></i> Register</a>
+  <a href="trials.html"><i class="fa-solid fa-calendar-check"></i> Trials</a>
+  <a href="scholarships.html"><i class="fa-solid fa-graduation-cap"></i> Scholarships</a>
+  <a href="academy-profiles.html"><i class="fa-solid fa-users"></i> Players</a>
+  <a href="management-profiles.html"><i class="fa-solid fa-user-tie"></i> Management</a>
+  <a href="tours&fixtures.html"><i class="fa-solid fa-calendar-day"></i> Tours & Fixtures</a>
+  <a href="our-partners.html"><i class="fa-solid fa-handshake"></i> Our Partners</a>
+</nav>
+
+<section>
+  <h2>Player Registration Form</h2>
+  <form action="https://formsubmit.co/summitcricketacademy@gmail.com" method="POST">
+    <label for="fullName">Full Name *</label>
+    <input type="text" id="fullName" name="FullName" required>
+
+    <label for="dob">Date of Birth *</label>
+    <input type="date" id="dob" name="DateOfBirth" required>
+
+    <label for="school">School (if applicable)</label>
+    <input type="text" id="school" name="School">
+
+    <label for="contactNumber">Contact Number *</label>
+    <input type="tel" id="contactNumber" name="ContactNumber" required placeholder="+263 ...">
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="Email" required>
+
+    <label for="hand">Batting Hand *</label>
+    <select id="hand" name="BattingHand" required>
+      <option value="">Select Hand</option>
+      <option value="Right">Right Hand</option>
+      <option value="Left">Left Hand</option>
+      <option value="Both">Both Hands</option>
+    </select>
+
+    <label for="role">Playing Role *</label>
+    <select id="role" name="PlayingRole" required>
+      <option value="">Select Role</option>
+      <option value="Batter">Batter</option>
+      <option value="Bowler">Bowler</option>
+      <option value="All-Rounder">All-Rounder</option>
+      <option value="Keeper">Wicket-Keeper</option>
+    </select>
+
+    <label>Emergency Contact Details *</label>
+    <div class="emergency-contact">
+      <input type="text" name="EmergencyName" placeholder="Name" required>
+      <input type="text" name="EmergencyRelationship" placeholder="Relationship" required>
+      <input type="tel" name="EmergencyPhone" placeholder="Phone Number" required>
+    </div>
+
+    <button type="submit">Register Now 📝</button>
+  </form>
+
+  <a href="indemnity_form.pdf" download class="download-btn">Download Indemnity Form 📄</a>
+</section>
+
+<footer>
+  © 2025 Summit Cricket Academy. All Rights Reserved.
+</footer>
+
+</body>
+</html>
