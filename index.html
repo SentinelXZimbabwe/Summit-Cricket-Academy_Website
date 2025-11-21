@@ -5,107 +5,193 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Summit Cricket Academy — U23 Trials 2026</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <style>
   body {
-      margin: 0;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      background: #ffffff;
-      color: #111;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-    header {
-      background: #ffffff;
-      padding: 40px 20px;
-      text-align: center;
-      border-bottom: 1px solid #eee;
-      animation: fadeInDown 1s ease;
-    }
-    header img {
-      max-width: 100px;
-      margin-bottom: 15px;
-      animation: bounce 2s infinite;
-    }
-    header h1 {
-      font-size: 36px;
-      margin: 0;
-      font-weight: 700;
-      color: #111;
-    }
-    header p {
-      font-size: 16px;
-      margin-top: 5px;
-      color: #555;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      padding: 15px 0;
-      background: #ffffff;
-      border-bottom: 1px solid #eee;
-      animation: fadeIn 1.5s ease;
-    }
-    nav a {
-      text-decoration: none;
-      color: #111;
-      font-weight: 500;
-      transition: color 0.2s, transform 0.3s;
-    }
-    nav a:hover {
-      color: #ff4d4d;
-      transform: scale(1.1);
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-      animation: fadeInUp 1s ease;
-    }
-    h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #111;
-    }
-    p, li {
-      font-size: 16px;
-      color: #555;
-    }
-    li::before {
-      content: '\1F3CF';
-      margin-right: 8px;
-    }
-    ul { padding-left: 20px; }
-    footer {
-      background: #ffffff;
-      color: #555;
-      text-align: center;
-      padding: 25px;
-      border-top: 1px solid #eee;
-      margin-top: 40px;
-      font-size: 14px;
-      animation: fadeIn 2s ease;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #ffffff;
+    color: #111;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* HEADER */
+  header {
+    background: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    animation: fadeInDown 1s ease;
+  }
+  header img {
+    max-width: 100px;
+    margin-bottom: 15px;
+    animation: bounce 2s infinite;
+  }
+  header h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 700;
+    color: #111;
+  }
+  header p {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #555;
+  }
+
+  /* NAVIGATION BAR */
+  nav {
+    background: #ffffff;
+    border-bottom: 1px solid #eee;
+    animation: fadeIn 1.5s ease;
+  }
+
+  nav .menu {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px 0;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    transition: color 0.2s, transform 0.3s;
+  }
+  nav a:hover {
+    color: #ff4d4d;
+    transform: scale(1.1);
+  }
+
+  /* HAMBURGER ICON */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 24px;
+    text-align: right;
+  }
+
+  /* SECTION */
+  section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    animation: fadeInUp 1s ease;
+  }
+
+  section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #111;
+  }
+
+  /* TIMER GRID */
+  .timer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+  }
+
+  /* TIMER PADS */
+  .timer {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-align: center;
+  }
+
+  .timer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 28px rgba(0,0,0,0.12);
+  }
+
+  .timer h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #111;
+  }
+
+  .timer .time {
+    background: #fff5f5;
+    color: #ff3b3b;
+    padding: 12px 18px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 12px;
+    border: 1px solid #ffe0e0;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .timer p {
+    color: #666;
+    font-size: 14px;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #ffffff;
+    color: #555;
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #eee;
+    margin-top: 40px;
+    font-size: 14px;
+    animation: fadeIn 2s ease;
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-15px); }
+    60% { transform: translateY(-7px); }
+  }
+
+  /* MOBILE RESPONSIVENESS */
+  @media(max-width: 850px) {
+    .hamburger {
+      display: block;
     }
 
-    @keyframes fadeInDown {
-      0% { opacity: 0; transform: translateY(-30px); }
-      100% { opacity: 1; transform: translateY(0); }
+    nav .menu {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      background: #ffffff;
+      padding: 20px 0;
+      border-bottom: 1px solid #eee;
     }
-    @keyframes fadeInUp {
-      0% { opacity: 0; transform: translateY(30px); }
-      100% { opacity: 1; transform: translateY(0); }
+
+    header h1 {
+      font-size: 28px;
     }
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
+
+    header img {
+      max-width: 80px;
     }
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-      40% { transform: translateY(-15px); }
-      60% { transform: translateY(-7px); }
-    }
+  }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -114,40 +200,54 @@
   <p>Honouring: C. Sapuwa Memorial Cup | Bulawayo, Zimbabwe</p>
 </header>
 
+<!-- MOBILE MENU ICON -->
+<div class="hamburger" onclick="toggleMenu()">
+  <i class="fa-solid fa-bars"></i>
+</div>
+
+<!-- NAV MENU -->
 <nav>
-  <a href="landing-page.html"><i class="fa-solid fa-house"></i> Home</a>
-  <a href="register.html"><i class="fa-solid fa-pen-to-square"></i> Register</a>
-  <a href="trials.html"><i class="fa-solid fa-calendar-check"></i> Trials</a>
-  <a href="scholarships.html"><i class="fa-solid fa-graduation-cap"></i> Scholarships</a>
-  <a href="academy-profiles.html"><i class="fa-solid fa-users"></i> Players</a>
-  <a href="management-profiles.html"><i class="fa-solid fa-user-tie"></i> Management</a>
-  <a href="tours&fixtures.html"><i class="fa-solid fa-calendar-day"></i> Tours & Fixtures</a>
-  <a href="our-partners.html"><i class="fa-solid fa-handshake"></i> Our Partners</a>
+  <div class="menu" id="mobileMenu">
+    <a href="landing-page.html"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="register.html"><i class="fa-solid fa-pen-to-square"></i> Register</a>
+    <a href="trials.html"><i class="fa-solid fa-calendar-check"></i> Trials</a>
+    <a href="scholarships.html"><i class="fa-solid fa-graduation-cap"></i> Scholarships</a>
+    <a href="academy-profiles.html"><i class="fa-solid fa-users"></i> Players</a>
+    <a href="management-profiles.html"><i class="fa-solid fa-user-tie"></i> Management</a>
+    <a href="tours&fixtures.html"><i class="fa-solid fa-calendar-day"></i> Tours & Fixtures</a>
+    <a href="our-partners.html"><i class="fa-solid fa-handshake"></i> Our Partners</a>
+  </div>
 </nav>
 
 <section>
   <h2>Important Dates & Countdown Timers ⏰</h2>
+
   <div class="timer-container">
+
     <div class="timer">
       <h3>📅 Registration Opens</h3>
       <div class="time" id="timerRegistration"></div>
       <p>27 November 2025</p>
     </div>
+
     <div class="timer">
       <h3>📢 Team Announcement</h3>
       <div class="time" id="timerTeams"></div>
       <p>27 December 2025</p>
     </div>
+
     <div class="timer">
       <h3>📝 Briefing Session</h3>
       <div class="time" id="timerBrief"></div>
       <p>3 January 2026, 09:00</p>
     </div>
+
     <div class="timer">
       <h3>🏏 Trial Tournament Start</h3>
       <div class="time" id="timerTournament"></div>
       <p>10 January 2026</p>
     </div>
+
   </div>
 </section>
 
@@ -156,7 +256,13 @@
 </footer>
 
 <script>
-// Countdown target dates
+/* HAMBURGER MENU TOGGLE */
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+}
+
+/* COUNTDOWN TIMERS */
 const registrationDate = new Date("Nov 27, 2025 00:00:00").getTime();
 const teamsDate = new Date("Dec 27, 2025 18:00:00").getTime();
 const briefDate = new Date("Jan 3, 2026 09:00:00").getTime();
@@ -164,24 +270,28 @@ const tournamentDate = new Date("Jan 10, 2026 08:00:00").getTime();
 
 function updateTimers() {
   const now = new Date().getTime();
-  const dates = [
+  const timers = [
     { id: "timerRegistration", target: registrationDate },
     { id: "timerTeams", target: teamsDate },
     { id: "timerBrief", target: briefDate },
     { id: "timerTournament", target: tournamentDate }
   ];
 
-  dates.forEach(function(d) {
-    let distance = d.target - now;
-    if(distance < 0){
-      document.getElementById(d.id).innerHTML = "📌 Happening Now / Completed";
+  timers.forEach(t => {
+    let distance = t.target - now;
+
+    if (distance < 0) {
+      document.getElementById(t.id).innerHTML = "📌 Happening Now / Completed";
       return;
     }
+
     let days = Math.floor(distance / (1000*60*60*24));
     let hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
     let minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
     let seconds = Math.floor((distance % (1000*60)) / 1000);
-    document.getElementById(d.id).innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+    document.getElementById(t.id).innerHTML =
+      `${days}d ${hours}h ${minutes}m ${seconds}s`;
   });
 }
 
